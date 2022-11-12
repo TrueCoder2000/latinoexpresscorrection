@@ -1,0 +1,1728 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+
+body, html{
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+	max-width: 100%;
+}
+
+
+.container{
+	/*display: grid;
+	grid-template-columns: auto auto auto;*/
+	/*grid-template-areas: 'h' 'dm' 'b' 'da' 'dos' 'dc' 'df';*/
+	/*grid-template-rows: 210px 900px;*/ 
+}
+
+
+/*.container>div{
+	height: 1600px;
+}*/
+
+
+header{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	/*grid-area: h;*/
+	/*width: 100%;*/
+}
+
+.company-logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+}
+
+/*.flex-menu{
+	margin: 5px;
+	flex: 1 1 20rem;
+	background-color: green;
+}*/
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 100px;
+}
+
+.image-logo{
+	width: 60%;
+	height: 90px;
+	position: relative;
+
+}
+
+.div-phone-adress{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	height: 100px;
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+}
+
+.flex-phone-adress{
+	flex: 1 1 20rem;
+}
+
+.phone{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	/*width: 50%;*/
+	/*height: 90px;*/
+}
+
+
+.div-icon-phone{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	/*width: 40%;*/
+	height: 90px;
+	margin-right: 20px;	
+}
+
+.icon-phone{
+	color: #FFA32B;
+}
+
+.div-link-phone-number{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 40%;
+	height: 60px;
+}
+
+.link-phone-number{
+	/*color: #00659C;*/
+	color: #202020;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial;
+}
+
+
+.adress{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 30px;
+	/*width: 50%;*/
+	/*height: 90px;*/
+}
+
+
+.div-icon-adress{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 40%;
+	height: 90px;
+	margin-right: 20px;
+}
+
+
+.icon-adress{
+	color: #FFA32B;
+}
+
+
+.div-link-adress{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 60%;
+	height: 90px;
+}
+
+.link-adress{
+	/*color: #00659C;*/
+	color: #202020;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 13px;
+}
+
+
+.div-menu{
+	/*width: 100%;*/
+	height: 80px;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	/*background-image: linear-gradient(to right, #00659C 75%, #FFA32B 25%);
+	background-color: #00659C;*/
+	background-color: #202020;
+	/*grid-area: dm;*/
+}
+
+
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: linear-gradient(#000080,orange);
+	background-image: linear-gradient(to right, #00659C 75%, #FFA32B 25%);
+	box-shadow: 0px 0px 2px black;
+	z-index: 2;*/
+	/*width: 100%;*/
+    height: 80px;
+}
+
+
+.menu li{
+	/*font-size: 20px;
+	font-weight: bold;
+	font-family: arial;*/
+	list-style: none;
+	position: relative;
+	text-align: center;
+    margin: 12px;
+	/*margin-right: 40px;*/
+}
+
+
+
+.menu li a{
+	text-decoration: none;
+	text-align: center;
+	color: #FFA32B;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu li:hover{
+	transform: translateY(-20px);
+	transition: 1.5s;
+}
+
+
+.menu li a:hover{
+	color: white;
+}
+
+
+/*............................................................................DIV CHATBOT LATINO...........................................................................*/
+
+.qr_code{
+    width: 7%;
+    position:relative;
+    right:5px;
+    position: fixed;
+    z-index: 100;
+    border: 1px #202020 solid;
+}
+
+
+.div-btn-whatsapp{
+	width: 20%;
+	height: 400px;
+	position: fixed;
+	padding-right: 10px;
+	top: 500px;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	margin: auto 80%;
+	z-index: 100;
+}
+
+
+.div-chatbot{
+	width: 300px;
+	height: 340px;
+	background-color: lightgray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: none;
+}
+
+
+.hide-chatbot{
+	display: block;
+}
+
+
+.head-chatbot{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00659C;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+
+.photo-chatbot-head{
+	width: 40%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.photo-chatbot-head img{
+	width: 40%;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.photo-chatbot-head h4{
+	color: white;
+	font-family: arial;
+	font-size: 17px;
+}
+
+/*.name-chatbot{
+	width: 40%;
+	height: 80px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+
+.name-chatbot h4{
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+}*/
+
+
+.body-chatbot{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	
+}
+
+
+.photo-chatbot-body{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.photo-chatbot-body img{
+	width: 15%;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+
+.photo-chatbot-body h4{
+	font-weight: normal;
+}
+
+
+/*.message-chatbot{
+	width: 50%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.message-chatbot h4{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: normal;
+}*/
+
+.footer-chatbot{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00659C;
+	
+}
+
+
+.footer-chatbot textarea{
+	width: 70%;
+	height: 40px;
+	resize: none;
+	outline: none;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+
+
+.footer-chatbot a{
+	text-decoration: none;
+}
+
+
+.footer-chatbot button{
+	height: 40px;
+	width: 20%;
+	background-color: #FFA32B;
+	border: 1px lightgray solid;
+}
+
+
+.footer-chatbot button a{
+	color: white;
+}
+
+.div-icon-whatsapp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #25D366;
+	border-radius: 50%;
+	padding-left: 7px;
+	cursor: pointer;
+	position: relative;
+	top: 345px;
+	right: 30px;
+}
+
+.div-btn-whatsapp i{
+	font-size: 50px;
+	padding-right: 50px;
+}
+
+
+/*............................................................................DIV BACKGROUND LATINO...........................................................................*/
+
+
+.background-image{
+	background-image: url("photo/backgroundpainel.png");
+	/*width: 100%;*/
+	height: 900px;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;*/
+	position: relative;
+	/*top: -40px;
+	z-index: 0;
+	/*grid-area: db;*/
+	/*background-color: purple;*/
+}
+
+.div-text-background{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-text-background h2{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: arial;
+	color: #00659C;
+}
+
+
+.div-button-background{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.btn-contactus{
+	width: 10%;
+	height: 90px;
+	background-color: #00659C;
+	margin: 10px;
+	cursor: pointer;
+}
+
+
+.btn-contactus:hover{
+	transform: translateX(-40px);
+	transition: 1s;
+}
+
+
+.btn-contactus a{
+	color: white;
+	text-decoration: none;
+	font-size: 23px;
+}
+
+.btn-ourservices{
+	width: 10%;
+	height: 90px;
+	background-color: transparent;
+	margin: 10px;
+	border: 4px #FFA32B solid;
+	cursor: pointer;
+}
+
+
+.btn-ourservices a{
+	color: #00659C;
+	text-decoration: none;
+	font-size: 23px;
+}
+
+
+.btn-ourservices:hover{
+	background-color: #FFA32B;
+	border: 4px solid #FFA32B;
+	cursor: pointer;
+	transition: 1s;
+}
+
+
+
+/*....................................................................................DIV-ABOUT.................................................................................................*/
+
+.div-about{
+	/*width: 100%;
+	height: 700px;*/
+	display: block;
+	/*margin: 25% 25%;
+	position: relative;*/
+	/*top: 30px;*/
+	/*margin-bottom: 280px;*/
+	/*grid-area: da;*/
+	margin-top: 200px;
+}
+
+
+.div-text-about-h1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-text-about-h1 h1{
+	font-size: 40px;
+	font-family: arial;
+	color: black;
+    text-align: center;
+	position: relative;
+	/*top: 50px;*/
+	text-align: center;
+	/*margin-bottom: 50px;
+    margin: auto auto;*/
+}
+
+
+.divInformation{
+	width: 100%;
+	height: 300px;
+	display: block;
+}
+
+.information1{
+	background-color: orange;
+	width: 73%;
+	height: 140px;
+	display: block;
+	margin: auto auto;
+}
+
+.information1 h1{
+	font-size: 40px;
+	font-family: 'arial';
+	color: black;
+	text-align: left;
+	margin-left: 10px;
+	position: relative;
+	top: 20px;
+}
+
+.information1 h3{
+	color: black;
+	font-size: 20px;
+	font-family: 'arial';
+	margin-left: 10px;
+	position: relative;
+	top: -10px;
+	font-weight: normal;
+}
+
+
+.information2{
+	background-color: black;
+	width: 73%;
+	height: 50px;
+	display: block;
+	margin: auto auto;
+}
+
+
+.information2 h5{
+	color: white;
+	font-size: 20px;
+	font-family: 'arial';
+	margin-left: 10px;
+	position: relative;
+	/*font-weight: 500;*/
+}
+
+
+
+.div-about-image-text{
+	/*width: 100%;
+	height: 500px;*/
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	opacity: 0;
+}
+
+
+.flex-about-image-text{
+	flex: 1 1 20rem;
+	background-color: transparent;
+}
+
+
+.div-about-image-text p{
+	font-weight: normal;
+	font-family: arial;
+	font-size: 15px;
+	/*margin: 5px;*/
+	position: relative;
+	top: 5px;
+	padding: 5px;
+	text-align: justify;
+	/*background-color: rgba(236, 236, 236, 0.3);*/
+	box-sizing: border-box;
+	color: gray;
+	/*width: 30%;
+	height: 500px;
+	padding: 10px;*/
+}
+
+.div-about-image-text img{
+	/*width: 40%;
+	height: 500px;*/
+}
+
+
+.div-about-text{
+	
+}
+
+.list-service{
+    background-color: rgba(235, 229, 229, 0.781);
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-service li{
+    padding: 5px;
+}
+/*.....................................................................................DIV-OUR-SERVICES...........................................................................................*/
+
+.div-our-services{
+	/*width: 100%;*/
+	/*height: 1400px;*/
+	display: block;
+	/*margin-bottom: 500px;*/
+	opacity: 0;
+	/*grid-area: dos;*/
+	margin-top: 200px;
+}
+
+
+.div-text-ourservices{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-text-ourservices h1{
+	color: #FFA32B;
+	font-size: 60px;
+	font-family: arial;
+	text-shadow: 0px 0px 6px gray;
+}
+
+
+.div-text-better{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+
+.div-text-better h3{
+	color: #FFA32B;
+	font-size: 25px;
+	font-family: arial;
+	display: none;
+	color: #00659C;
+}
+
+
+.div-box-services{
+	/*height: 1400px;*/
+	display: block;
+}
+
+
+/*.block-1{
+	width: 100%;
+	height: 600px;*/
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*flex-wrap: wrap;
+	background-color: black;
+}*/
+
+
+/*.block-1>div{
+	width: 18.5%;*/
+	/*flex: 1 1 33rem;*/
+	/*height: 600px;*/
+	/*border: none;
+	margin: 10px;
+	background-color: red;
+}*/
+
+
+/*.div-price i{
+    color:white;
+    margin: 5px;
+    font-size: 25px;
+}*/
+
+
+.block-div-ours{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.subDiv-services{
+	margin: 5px;
+	flex: 1 1 33rem;
+	height: 800px;
+}
+
+/*......................................................................DIV-INCOME-TAX..........................................................................*/
+
+.div-income-tax-icon{
+	/*width: 100%;
+	height: 100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.div-flex-income-tax{
+	height: 600px;
+	margin: auto;
+	background-color: lightgray;
+	width: 60%;
+}
+
+
+.div-income-tax-icon i{
+	font-size: 50px;
+	width: 70px;
+	height: 70px;
+	background-color: #FFA32B;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+.div-income-tax-icon i:hover{
+	transform: scale(1.3);
+	transition: 0.9s;
+}
+
+
+.div-title-icome-tax{
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-title-icome-tax h3{
+	font-size: 30px;
+	font-family: arial;
+	color: #00659C;
+}
+
+
+.div-text-icome-tax{
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+
+.div-text-icome-tax p{
+	font-size: 14px;
+	font-weight: normal;
+	font-family: sans-serif;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 10px;
+}
+
+
+.div-price-star{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-input-price{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 17%;
+	font-size: 17px;
+}
+
+
+.btn-order{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnPaypal{
+	width: 50%;
+	height: 45px;
+	cursor: pointer;
+	background-color: rgb(51, 50, 50);
+	border: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+}
+
+/*......................................................................DIV-BUTTON PRICE..........................................................................*/
+
+/*.block-2{
+	width: 100%;
+	height: 320px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.block-2>div{
+	width: 17%;
+	height: 280px;
+	border: none;
+	background-color: #F5F5F5;
+}*/
+
+
+/*.btn-order{
+	position: relative;
+	top:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-order button{
+	background-color: #202020;
+	color:white;
+	width:45%;
+	height:45px;
+	border-radius: 6px;
+}
+
+
+.btn-order button:hover{
+	background-color: orange;
+	border: 1px orange solid;
+	transition: 0.9s;
+	cursor: pointer;
+}
+
+.btn-order button a{
+	color: white;
+	font-size:20px;
+	text-decoration:none
+}
+
+
+.btn-order .btnPay-2{
+	background-color: orange;
+	border: orange 1px solid;
+	color:white;
+	width:45%;
+	height:45px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+
+.btn-order .btnPay-2:hover{
+	background-color: white;
+	border: 1px white solid;
+	transition: 0.9s;
+}
+
+
+.btn-order .btnPay-2 a{
+	color: black;
+	font-size:20px;
+	text-decoration:none
+}
+
+.btn-order .btnPay-5{
+	background-color: orange;
+	border: orange 1px solid;
+	color:white;
+	width:45%;
+	height:45px;
+	border-radius: 6px;
+}
+
+
+.btn-order .btnPay-5:hover{
+	background-color: white;
+	border: 1px white solid;
+	transition: 0.9s;
+}
+
+
+.btn-order .btnPay-5 a{
+	color: black;
+	font-size:20px;
+	text-decoration:none
+}*/
+
+/*......................................................................DIV-CONTACT..........................................................................*/
+
+.contact{
+	/*width: 100%;*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*margin-bottom: 200px;*/
+	position: relative;
+	/*top: -250px;*/
+	/*justify-content: center;
+	align-items: center;*/
+	/*grid-area: dc;*/
+	margin-top: 200px;
+}
+
+
+.flex-contact{
+	flex: 1 1 30rem;
+}
+
+
+.divInformation{
+	width: 100%;
+	height: 300px;
+	display: block;
+}
+
+.information1-contact{
+	background-color: orange;
+	width: 73%;
+	height: 140px;
+	display: block;
+	margin: auto auto;
+}
+
+.information1-contact h1{
+	font-size: 40px;
+	font-family: 'arial';
+	color: black;
+	text-align: left;
+	margin-left: 10px;
+	position: relative;
+	top: 20px;
+}
+
+.information1-contact h3{
+	color: black;
+	font-size: 20px;
+	font-family: 'arial';
+	margin-left: 10px;
+	position: relative;
+	top: 30px;
+	font-weight: normal;
+}
+
+
+.information2-contact{
+	background-color: black;
+	width: 73%;
+	height: 50px;
+	display: block;
+	margin: auto auto;
+}
+
+
+.information2-contact h5{
+	color: white;
+	font-size: 20px;
+	font-family: 'arial';
+	margin-left: 10px;
+	position: relative;
+	font-weight: 500;
+}
+
+
+/***************************************************************DIV-LOCATION-INFORMATION***********************************************************/
+
+
+.div-location-information{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+	flex-wrap: wrap;
+}
+
+.flex-location-contact{
+	flex: 1 1 30rem;
+}
+
+
+/***************************************************************INFORMATION****************************************************************/
+.div-information{
+	/*width: 30%;
+	height: 400px;*/
+	background-color: #202020;
+	position: relative;
+	top: 50px;
+	padding: 20px;
+    overflow: hidden;
+}
+
+
+.info-name-company{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.info-name-company h3{
+	color: white;
+	margin-bottom: 10px;
+}
+
+.info-name-company p{
+	color: white;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.info-phone-company{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.info-phone-company h3{
+	color: white;
+	margin-bottom: 10px;
+}
+
+.info-phone-company p a{
+	color: white;
+	font-family: arial;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.info-days-company{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.info-days-company h3{
+	color: white;
+	margin-bottom: 10px;
+}
+
+.info-days-company p a{
+	color: white;
+	font-family: arial;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+/***************************************************************LOCATION-FORM**************************************************************/
+
+.block-location{
+	width: 60%;
+	height: 500px;
+	display: block;
+	position: relative;
+	top: 0px;
+}
+
+.div-text-location{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-text-location h3{
+	font-family: arial;
+	font-size: 35px;
+	/*color: #00659C;*/
+	color: black;
+	font-weight: normal;
+}
+
+
+.div-iframe-location{
+	/*width: 100%;
+	height: 400px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-iframe-location iframe{
+	width: 100%;
+	height: 400px;
+}
+
+
+/***************************************************************CONTACT-FORM***************************************************************/
+
+.block-contact{
+	/*width: 100%;
+	height: 500px;
+	display: block;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 20px;
+}
+
+
+.div-text-contact{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.div-text-contact h3{
+	font-family: arial;
+	font-size: 35px;
+	/*color: #00659C;*/
+	color: black;
+	font-weight: normal;
+}
+
+
+.div-form-contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+    position: relative;
+    left: -650px;
+    opacity: 0;
+}
+
+
+.form-contact{
+	width: 45%;
+	height: 400px;
+}
+
+
+.label{
+	width: 100%;
+	height: 25px;
+}
+
+
+.label label{
+	font-family: arial;
+	font-size: 17px;
+	font-weight: bold;
+	color: gray;
+}
+
+
+.input{
+	width: 100%;
+	display: block;
+}
+
+.input input{
+	width: 100%;
+	height: 35px;
+	outline: none;
+	padding-left: 5px;
+	font-size: 17px;
+	box-sizing: border-box;
+}
+
+
+.div-textarea{
+	width: 100%;
+	height: 130px;
+	display: block;
+}
+
+
+.div-textarea textarea{
+	width: 100%;
+	height: 130px;
+	resize: none;
+	outline: none;
+	padding: 10px;
+	font-size: 17px;
+	box-sizing: border-box;
+}
+
+
+.div-button-send{
+	width: 100%;
+	height: 100px;
+}
+
+
+.btn-send-message{
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	background-color: #202020;
+	border: none;
+	box-shadow: 0px 0px 1px black;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/*.btn-send-message::after{
+	content: '';
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background-color: rgba(72, 61, 139, 0.7);
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.9s;
+}*/
+
+
+.btn-send-message:hover{
+	top: 0px;
+	transition: 0.9s;
+	background-color: black;
+	/*background-color: #00659C;*/
+}
+
+
+.btn-send-message a{
+	color: orange;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+
+.btn-send-message a:hover{
+	color: white;
+}
+
+
+
+
+/*.................................................................................DIV-FOOTER.......................................................................................*/
+
+.div-footer{
+	/*height: 900px;*/
+	display: block;
+	/*grid-area: df;*/
+	margin-top: 200px;
+}
+
+
+.footer-blue-block{
+	height: 300px;
+	background-color: #FFA32B;
+	/*background-color: #00659C;*/
+}
+
+
+.text-blue-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+
+.text-blue-footer h2{
+	color: #202020;
+	font-size: 35px;
+	font-family: arial;
+}
+
+
+.text-blue-footer a{
+	color: #202020;
+	font-size: 35px;
+	font-family: arial;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+
+.hours-operation-blue-footer{
+	width: 55%;
+	height: 100px;
+	background-color: #FFA32B;
+	display: block;
+	border-radius: 20px;
+	display: block;
+	margin: auto auto;
+}
+
+
+.div-text-hours-operation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+
+.div-text-hours-operation h2{
+	font-family: arial;
+	font-size: 30px;
+	color: #202020;
+}
+
+
+.div-hours-operation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+
+.div-hours-operation h2{
+	font-family: arial;
+	font-size: 30px;
+	color: #202020;
+}
+
+.footer-black-block{
+	width: 100%;
+	height: 650px;
+	background-color: #282828;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/*.footer-black-block>div{
+	width: 30%;
+	height: 400px;
+	background-color: white;
+}*/
+
+
+.block-logo{
+	width: 20%;
+	height: 100px;
+	display: block;
+}
+
+.block-logo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+
+.block-menu-footer{
+	width: 30%;
+	height: 400px;
+	display: block;
+}
+
+
+.block-menu-footer>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+
+
+.block-menu-footer-text{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+}
+
+
+.block-menu-footer-text h4{
+	color: #FFA32B;
+	font-size: 20px;
+	font-family: arial;
+	font-weight: normal;
+}
+
+
+.block-menu-footer>div i{
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.block-menu-footer>div a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	font-family: arial;
+	font-weight: normal;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.block-network{
+	width: 30%;
+	height: 400px;
+	display: block;
+}
+
+
+.block-network>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+
+.block-network>div i{
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.block-network>div a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	font-family: arial;
+	font-weight: normal;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/********************************************************************************MEDIA QUERIES PARA 1900PX**********************************************************************/
+
+@media only screen and (max-width: 1900px) {
+	.container {
+	  width: 100%;
+	  display: block;
+	}
+
+	.company-logo{
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.logo{
+		width: 30%;
+		transition: 0.3s;
+	}
+
+	.div-phone-adress{
+		width: 70%;
+		transition: 0.3s;
+	}
+
+	.phone{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.div-icon-phone{
+		width: 50%;
+		display: flex;
+		justify-content: end;
+	}
+
+
+	.adress{
+		width: 50%;
+	}
+
+	.menu{
+		width: 100%;
+		transition: 0.3s;
+		justify-content: center;
+	}
+
+
+	.btn-order button{
+		width: 80%;
+		transition: 0.3s;
+	}
+
+
+	.btn-order .btnPay-2{
+		width: 80%;
+		transition: 0.3s;
+	}
+
+
+	.btn-order .btnPay-5{
+		width: 80%;
+		transition: 0.3s;
+	}
+
+
+  }
+
+
+  /********************************************************************************MEDIA QUERIES PARA 900PX**********************************************************************/
+
+  @media only screen and (max-width: 900px) {
+	body{
+        background-color: lightgray;
+    }
+    
+    .container {
+	  display: block;
+	  box-sizing: border-box;
+	}
+
+	header{
+		width: 100%;
+	}
+
+
+	.company-logo{
+		display: none;
+	}
+
+	.div-menu{
+		width: 100%;
+	}
+
+	.menu{
+		width: 100%;
+		transition: 0.3s;
+	}
+
+	.div-about{
+		opacity: 1;
+	}
+
+	.div-about-image-text{
+		flex-direction: column;
+	}
+
+	.div-about-image-text img{
+		width: 100%;
+	}
+
+	.div-about-image-text p{
+		width: 100%;
+		text-align: justify;
+	}
+
+
+    .div-flex-income-tax{
+        width: 85%;
+    }
+
+	.block-contact{
+		display: block;
+	}
+
+	.div-form-contact{
+		background-color: lightgray;
+		width: 100%;
+		height: 550px;
+        opacity: 1;
+	}
+
+	.form-contact{
+		width: 80%;
+        opacity: 1;
+	}
+
+
+	.block-logo{
+		display: none;
+	}
+
+	.div-information{
+		display: none;
+	}	
+	
+	.footer-blue-block{
+		display: none;
+	}
+
+	.footer-black-block{
+		flex-direction: column;
+		background-color: #202020;
+	}
+
+	.block-menu-footer{
+		width: 100%;
+	}
+
+	.block-network{
+		width: 100%;
+	}
+
+	.qr_code{
+		width: 30%;
+	}
+
+
+	/*.div-box-services{
+		width: 100%;
+		height: 2000px;
+	}*/
+
+	/*.div-text-ourservices h1{
+		display: none;
+	}
+
+	
+	.div-box-services{
+		flex-direction: column;
+	}
+
+
+	.block-1{
+		width: 100%;
+		flex-direction: column;
+		background-color: red;
+	}
+
+	.block-1>div{
+		width: 70%;
+	}
+
+	.block-2{
+		position: relative;
+		top: 100px;
+		background-color: green;
+	}
+
+	.contact{
+		display: none;
+	}*/
+}

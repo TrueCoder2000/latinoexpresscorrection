@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Paypal</title>
+</head>
+<body style="background-color: orange;">
+    
+    <div class="text-payment" style="margin-bottom: 100px;height:150px;display:flex;justify-content:center;align-items:center;">
+        <h1 style="font-size: 40px;font-family:Arial, Helvetica, sans-serif;color: gray;font-style: italic;">Make your payment</h1>
+    </div>
+    
+    <div style="display:flex;justify-content:center;align-items:center;" id="paypal-button-container-P-1LP9655436227924GMNDXBDQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AaDKAiCYLoS9ZgQj8zoN69NYMncWrbe4tsNohjc1evsJ1yH7AQr7flexKUIwQnGk3pa_MSjyWtueNDdy&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-1LP9655436227924GMNDXBDQ',
+          quantity: 1 // The quantity of the product for a subscription
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-1LP9655436227924GMNDXBDQ'); // Renders the PayPal button
+</script>
+
+</body>
+</html>
